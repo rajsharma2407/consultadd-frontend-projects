@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circles</title>
+    <!-- Internal CSS -->
+    <style>
+        .btn{
+            border: 2px black solid;
+            border-radius: 100%; 
+            margin: auto;
+            position: absolute;
+            left:50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: transparent;
+        }
+        #btn1{
+            height: 300px;
+            width: 300px;
+            border-color: red;
+        }
+
+        #btn2{
+            height: 200px;
+            width: 200px ;
+            border-color: green;
+        }
+
+        #btn3{
+            height: 100px;
+            width: 100px;
+            border-color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Button 1 -->
+    <button id="btn1" class="btn" onclick="alert('circle 1')">
+        <!-- Button 2 -->
+        <button id="btn2" class="btn">
+            <!-- Button 3 -->
+            <button id="btn3" class="btn">
+
+            </button>
+        </button>
+    </button>
+
+
+<!-- JS -->
+    <script>
+        const btn1 = document.getElementsByClassName("btn")[0];
+        const btn2 = document.getElementsByClassName("btn")[1];
+        const btn3 = document.getElementsByClassName("btn")[2];
+        
+        // btn1.addEventListener('click', ()=>{
+        //     alert('circle 1')
+        // })
+        // btn1.onClick = function(){
+        //     conosle.log("this")
+        // }
+        btn2.addEventListener('click', ()=>{
+            alert('circle 2')
+        })
+        btn3.addEventListener('click', ()=>{
+            alert('circle 3')
+        })
+    </script>
+</body>
+</html>

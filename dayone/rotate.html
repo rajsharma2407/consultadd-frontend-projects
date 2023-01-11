@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotate grids</title>
+    <style>
+        #row{
+            position: absolute;
+            left: 40%;
+            top: 40%;
+        }
+        .btn{
+            padding: 10px;
+            margin: 2px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Grid 9x9 -->
+    <div id="row">
+        <div>
+            <input type="button" class="btn" id="btn1" value="1">
+            <input type="button" class="btn" id="btn2" value="2">
+            <input type="button" class="btn" id="btn3" value="3">
+        </div>
+        <div>
+            <input type="button" class="btn" id="btn4" value="4">
+            <input type="button" class="btn" id="btn5" value="5">
+            <input type="button" class="btn" id="btn6" value="6">
+        </div>
+        <div>
+            <input type="button" class="btn" id="btn7" value="7">
+            <input type="button" class="btn" id="btn8" value="8">
+            <input type="button" class="btn" id="btn9" value="9">
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script>
+        const btn1 = document.getElementById("btn1");
+        const btn2 = document.getElementById("btn2");
+        const btn3 = document.getElementById("btn3");
+        const btn4 = document.getElementById("btn4");
+        const btn5 = document.getElementById("btn5");
+        const btn6 = document.getElementById("btn6");
+        const btn7 = document.getElementById("btn7");
+        const btn8 = document.getElementById("btn8");
+        const btn9 = document.getElementById("btn9");
+
+        btn5.addEventListener('click', ()=>{
+            console.log(btn1)
+            let x = btn1.value;
+            btn1.value = btn4.value;
+            btn4.value = btn7.value;
+            btn7.value = btn8.value;
+            btn8.value = btn9.value;
+            btn9.value = btn6.value;
+            btn6.value = btn3.value;
+            btn3.value = btn2.value;
+            btn2.value = x;
+        })
+    </script>
+</body>
+</html>
