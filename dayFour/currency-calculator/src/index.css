@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  font: small-caps;
+  background-color: rgba(19, 197, 19, 0.564);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
