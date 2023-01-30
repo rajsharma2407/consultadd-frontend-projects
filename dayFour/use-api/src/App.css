@@ -1,0 +1,21 @@
+button{
+    display: block;
+    margin: 20px auto;
+    color:rgb(98, 98, 209);
+    background: transparent;
+    border: 2px solid rgb(98, 98, 209);
+    /* padding:5px; */
+    font-size: 1.1em;
+    border-radius: 10px;
+    width:100px;
+    height:50px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out all;
+}
+button:hover{
+    color:white;
+    background-color: rgb(98, 98, 209);
+}
+input{
+    cursor:pointer
+}

@@ -13,7 +13,7 @@ const InputBar = ({setValue, value, placeholder}) =>{
     }
     return (
         <>
-            <input type="number" onChange={(e)=>setValue(e.target.value)} style={inputStyles} value={value} placeholder={placeholder}/>
+            <input type="number" onChange={(e)=>setValue(e.target.value)} style={inputStyles} placeholder={placeholder}/>
         </>
     )
 }

@@ -13,6 +13,7 @@ function App() {
   const [toCurrency, setToCurrency] = useState('INR');
   useEffect(() =>{
     const fetchData =  async () => {
+      // console.log("reached 1")
       try{
         let value = await axios.get('https://api.apilayer.com/exchangerates_data/symbols', {
           headers:{
@@ -20,6 +21,7 @@ function App() {
           }
         });
         setData(value.data.symbols);
+        console.log(data)
       }catch(err){
         console.log(err)
       }
